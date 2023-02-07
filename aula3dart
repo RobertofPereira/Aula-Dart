@@ -9,3 +9,18 @@ void repeteFrase(int i, int y, String text) {
  } 
 }
 //_______________________________________________________
+
+void main() {
+  repeteFrase(text: "olá", i: 0, y: 10);
+  
+}
+
+void repeteFrase({int? i, int? y, String? text}) {
+ //for(i; i < y; i++){
+   // print(text);
+ //} 
+  print(i ?? 10);
+  print(y ?? 1000);
+  print(text ?? "veio nada");
+
+}
