@@ -1,0 +1,11 @@
+void main() {
+  repeteFrase(0, 10, "será que funciona?");
+  
+}
+
+void repeteFrase(int i, int y, String text) {
+ for(i; i < y; i++){
+    print(text);
+ } 
+}
+//_______________________________________________________
