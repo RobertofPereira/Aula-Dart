@@ -1,0 +1,34 @@
+void main() {
+ Cliente paulo = Cliente("paulo");
+  Cliente andre = Cliente("andre");
+  print(paulo);
+  print(andre);
+  
+  print(paulo.getNome);
+  paulo.setNome = "paulete";
+  print(paulo._nome);
+}
+
+
+class Cliente {
+  //atributos
+  String? _nome;
+  
+  //método contrutor
+  Cliente(this._nome);
+  
+  //getters e setters
+  set setNome(n) => _nome = n;  
+  String? get getNome => _nome;
+  
+  //métodos específicos
+  void informa() {
+    
+  }
+  
+  //método toString
+  @override 
+  String toString(){
+    return "Bom dia $_nome!";
+  }
+}
